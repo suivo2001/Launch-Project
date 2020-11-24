@@ -1,0 +1,99 @@
+h1 {
+    font-size: 50 
+}
+
+#top-navbar {
+    background-color: orange;
+}
+#top-navbar a{
+    color: white;
+    margin-left: 10px 
+
+}
+
+#about {
+    background:  url(/images/image8.png);
+    color: white
+}
+#titles{
+    color: black
+}
+#graph {
+    width: 550px;
+}
+#result{
+    color:grey;
+    font-weight: bold
+}
+#toHide{
+    display: none;
+    background: white
+}
+#hiddenImg {
+    width: 400px;
+}
+#about a{
+    background-color: orange
+}
+
+#advantages {
+    margin-top: 2em
+}
+
+#insideimages {
+    width:550px
+}
+#subscribe {
+    background-color: rgb(201, 138, 138);
+}
+#subscribe form{
+    color: white;
+    text-align: center;
+}
+#finaltext {
+    color:black;
+    font-size:20px
+}
+
+#unsubscribe {
+    text-align: center;
+    background-color: rgb(201, 138, 138);
+    color: white
+}
+
+#backhome {
+    color: black
+}
+
+#importantmessage{
+    text-align: center;
+    font-weight: bold;
+}
+
+.hvr-image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hvrbox-top {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hvrbox:hover .hvr-image{
+    filter: grayscale(100%);
+    opacity: 0.3
+}
+
+.hvrbox:hover .hvrbox-top{
+    opacity: 1;
+}
+

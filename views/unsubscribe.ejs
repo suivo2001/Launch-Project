@@ -1,0 +1,47 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <!-- Unsubscribe section-->
+    <section id="unsubscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12 col-md-12 mx-auto">
+                    <br><br><br>
+                    <!-- Displays message depending on currently subscribed name -->
+                    <h3> <%=name %> Are you sure you want to unsubscribe?</h3>
+                    <br>
+                    <!-- Shows error message if applicable -->
+                    <% if (errormessage.length > 0) { %> 
+                        <div><%= errormessage %> </div>
+                         <%} %> 
+                    <!-- Form for post request to unsubscribe -->
+                    <form action = "/unsubscribe" method = "POST">
+                        <div>
+                            <label for = "email">Email</label>
+                            <input type = "text" id = "email" name = "email" required>
+                            <button type = "submit">Unsubscribe</button>
+                        </div>
+        
+                    </form>
+                    <!-- Link to go back to home page-->
+                    <a id = "backhome" href="/">Back to home</a>
+                    <br><br><br><br>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+    
+</body>
+    
