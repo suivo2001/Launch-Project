@@ -43,10 +43,15 @@
 ## Limitations
 
 * Emails are not stored in a database but in a local list.
+* .env file has to be created with the key.
 
 ## How to run
 
-Code uses node.js, install yarn
+Code uses node.js. Install yarn, create a new file named .env and type in 
+    
+    SESSION_SECRET = secret
+
+In the terminal, run: 
 
     npm install
     yarn start
