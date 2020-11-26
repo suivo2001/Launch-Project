@@ -48,5 +48,6 @@
 
 Code uses node.js, install yarn
 
+    npm install
     yarn start
 
